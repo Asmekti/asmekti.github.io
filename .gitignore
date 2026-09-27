@@ -1,0 +1,8 @@
+# secrets : ne jamais publier
+*.rtf
+*.p12
+*.jks
+*.keystore
+*PRIVE*
+Jeton*
+.env
