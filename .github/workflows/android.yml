@@ -26,7 +26,7 @@ jobs:
       - name: Numéro de version
         run: |
           VN=$(python3 -c "import json;print(json.load(open('version.json'))['v'])")
-          VC=$(python3 -c "v='$VN'.split('.')+['0'];print(int(v[0])*100+int(v[1]))")
+          VC=$(python3 -c "v='$VN'.split('.')+['0'];print(1000+int(v[0])*100+int(v[1]))")   # +1000 : numérotation remise à 1.0 après la 2.17 (code 217)
           echo "VN=$VN" >> "$GITHUB_ENV"; echo "VC=$VC" >> "$GITHUB_ENV"; echo "Version $VN (code $VC)"
       - name: Copie de l'app web
         run: |
