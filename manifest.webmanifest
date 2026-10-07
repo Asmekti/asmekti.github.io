@@ -12,8 +12,8 @@
   "id": "./",
   "shortcuts": [
     {
-      "name": "Apprendre 5 min",
-      "short_name": "5 min",
+      "name": "Continuer",
+      "short_name": "Continuer",
       "url": "./?go=learn",
       "icons": [
         {
